@@ -1,0 +1,14 @@
+{
+    "categories": [
+        {
+            "id": "1",
+            "category": "processor",
+            "label": "Processzorok"
+        },
+        {
+            "id": "2",
+            "category": "graphic-card",
+            "label": "Videokártyák"
+        }
+    ]
+}

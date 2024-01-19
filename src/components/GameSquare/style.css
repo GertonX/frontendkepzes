@@ -1,0 +1,17 @@
+#game .game-square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 26px;
+    border-radius: 16px;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    transition: all .25s;
+}
+
+#game .game-area .game-square:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+    box-shadow: 1px 1px 14px 1px white;
+}

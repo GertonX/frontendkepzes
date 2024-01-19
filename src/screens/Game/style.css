@@ -1,0 +1,71 @@
+#game {
+    height: 100vh;
+    background-size: cover ;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+#game .headline{
+    margin: 0;
+    font-size: 60px;
+}
+
+#game .game-area {
+    padding: 30px 120px;
+}
+
+#game .game-area .row {
+    display: flex;
+    justify-content: center;
+}
+
+#game .won-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game .won-circle {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: pulsate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;  
+    transform-origin: center center;  
+    border: 2px solid black;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+#game .won-circle-text {
+    font-size: 60px;
+    color: red;
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: rgb(0, 153, 255);}
+    100% {color: rgb(5, 255, 5);}
+}
