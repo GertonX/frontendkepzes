@@ -4,16 +4,20 @@
             "id": "AS32YD",
             "name": "Intel Core i5-12600K",
             "price": 96545,
+            "currency": "Ft",
             "categoryId": "1",
             "quantity": "20",
+            "unit": "db",
             "imgUrl":"img/i5-12600k.jpg"
         },
         {
             "id": "QR59WC",
             "name": "Intel Core i7-14700K",
             "price": 192088,
+            "currency": "Ft",
             "categoryId": "1",
             "quantity":"25",
+            "unit": "db",
             "imgUrl":"img/i7-14700k.jpg"
         },
 
@@ -21,8 +25,10 @@
             "id": "BD12UC",
             "name": "AMD Ryzen 7 5800X",
             "price": 77983,
+            "currency": "Ft",
             "categoryId": "1",
             "quantity": "10",
+            "unit": "db",
             "imgUrl":"img/ryzen-7-7800x3d.jpg"
         },
 
@@ -30,8 +36,10 @@
             "id": "KC45GH",
             "name": "AMD Ryzen 5 5600X",
             "price": 62598,
+            "currency": "Ft",
             "categoryId": "1",
             "quantity": "10",
+            "unit": "db",
             "imgUrl":"img/ryzen-5-5600x.jpg"
         },
 
@@ -39,8 +47,10 @@
             "id": "AB12ED",
             "name": "AMD Ryzen 9 5900X",
             "price": 116880,
+            "currency": "Ft",
             "categoryId": "1",
             "quantity": "10",
+            "unit": "db",
             "imgUrl":"img/ryzen-9-5900x.jpg"
         },
 
@@ -48,8 +58,10 @@
             "id": "LZ67EC",
             "name": "GIGABYTE GeForce RTX 3060 12GB OC",
             "price": 135285,
+            "currency": "Ft",
             "categoryId": "2",
             "quantity": "23",
+            "unit": "db",
             "imgUrl":"img/rtx-3060-12gb-oc.jpg"
         },
 
@@ -57,8 +69,10 @@
             "id": "RT09LQ",
             "name": "ASUS Dual GeForce RTX 4060 OC 8GB",
             "price": 146960,
+            "currency": "Ft",
             "categoryId": "2",
             "quantity": "9",
+            "unit": "db",
             "imgUrl":"img/geforce-rtx-4060-oc-8gb.jpg"
         },
 
@@ -66,8 +80,10 @@
             "id": "AX43ZU",
             "name": "AMD Radeon RX 6700 XT 12GB",
             "price": 144810,
+            "currency": "Ft",
             "categoryId": "2",
             "quantity": "53",
+            "unit": "db",
             "imgUrl":"img/amd-radeon-rx-6700-xt-12gb.jpg"
         },
 
@@ -75,8 +91,10 @@
             "id": "HB48DA",
             "name": "Radeon PULSE RX 6600 8GB",
             "price": 99378,
+            "currency": "Ft",
             "categoryId": "2",
             "quantity": "18",
+            "unit": "db",
             "imgUrl":"img/radeon-pulse-rx-6600-8gb.jpg"
         },
 
@@ -84,8 +102,10 @@
             "id": "LZ67EW",
             "name": "GIGABYTE GeForce RTX 3060 12GB OC",
             "price": 135285,
+            "currency": "Ft",
             "categoryId": "2",
             "quantity": "23",
+            "unit": "db",
             "imgUrl":"img/rtx-3060-12gb-oc.jpg"
         }
     ]

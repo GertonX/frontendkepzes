@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "Egy antik revolver",
+            "headline": "asd",
+            "ImageUrl": "/img/revolver.jpg",
+            "description": "ez egy revolver"
+            
+        },
+        {
+            "id": "2",
+            "title": "Egy szép tengerpart",
+            "headline": "asd",
+            "ImageUrl": "/img/sunglasses.jpg",
+            "description": "nyaralás a tengerparton"
+        }
+    ]
+}

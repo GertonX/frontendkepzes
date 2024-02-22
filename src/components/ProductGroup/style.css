@@ -6,9 +6,13 @@
 #product-group .headline {
     text-align: left;
     font-size: 40px;
-    margin: 0 0 36px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    margin-left: 24px;
     color: white;
-    text-decoration: underline;
+    border-bottom: solid 5px white;
+    padding-bottom: 4px;
+    display: inline-flex;
 }
 
 #product-group .product-groups {
@@ -18,6 +22,7 @@
 #product-group .product-group {
     margin-bottom: 24px;
     color: white;
+    text-align: center;
 }
 
 #product-group .product-group-bar {

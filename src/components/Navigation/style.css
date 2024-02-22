@@ -61,7 +61,7 @@
 
 }
 
-.main-navigation-menu .dropdown {
+.main-navigation-menu .dropdown-button + .dropdown {
     position: absolute;
     width: 400px;
     background: white;
@@ -69,8 +69,23 @@
     top: 60px;
     border-radius: 16px;
     padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity linear 250ms;
 }
 
+.main-navigation-menu .dropdown-button:hover + .dropdown,
+.main-navigation-menu .dropdown-button .dropdown:hover {
+    opacity: 1;
+}
+
+.main-navigation-menu .dropdown:hover,
+.main-navigation-menu.dropdown-button a:hover {
+    opacity: 1;
+}
+
+.main-navigation-menu .dropdown {
+    border: 2px solid black;
+}
 
 .main-navigation-menu .dropdown ul {
     padding: 0;
@@ -87,6 +102,7 @@
 }
 .main-navigation-menu .dropdown-cart-item-quantity {
     width: 25%;
+    text-align: center;
 }
 
 .main-navigation-menu .dropdown-cart-item-price {
@@ -96,17 +112,27 @@
 
 .main-navigation-menu .button {
     border-radius: 16px;
-    border: 3px solid rgb(87, 233, 231);
+    border: 3px solid rgb(155, 164, 164);
     height: 40px;
     background-color: white;
     font-size: 15px;
     transition: all linear .25s;
+    display:block;
+    margin-left: 100px;
 }
 
 .main-navigation-menu .button:hover {
     cursor: pointer;
-    background-color: rgb(199, 199, 199);
-    border: 3px solid red;
+    border: 3px solid rgb(87, 233, 231);
+}
+
+.main-navigation-menu .cart-total-cost-label {
+    font-weight: bold;
+}
+
+.main-navigation-menu .cart-total-cost-value {
+    font-weight: bold;
+    margin-left: auto;
 }
 
 

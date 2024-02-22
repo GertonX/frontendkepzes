@@ -15,7 +15,7 @@ function Cart( { increaseQuantity, decreaseQuantity } ) {
                                     {product.name}
                                 </h3>
                                 <p className='cart-item-price'>
-                                    {product.price + " Ft"}
+                                    {product.price} {product.currency}
                                 </p>
                                 <p className='cart-item-unit-price'>
                                     egységár
@@ -29,7 +29,7 @@ function Cart( { increaseQuantity, decreaseQuantity } ) {
                             </button>
 
                             <span className='cart-item-selected-quantity'>
-                                {product.quantity}
+                                {product.quantity} {product.unit}
                             </span>
                             <button className='button cart-item-change-quantity-button' onClick={() => increaseQuantity(product.id) }>
                                 {'>'}
@@ -42,7 +42,7 @@ function Cart( { increaseQuantity, decreaseQuantity } ) {
                                 Végösszeg
                             </p>
                             <h3 className='cart-item-final-price'>
-                                {product.price * product.quantity + " Ft"}
+                                {product.price * product.quantity } {product.currency}
                             </h3>
                         </div>
                     </li>

@@ -2,9 +2,9 @@ import './style.css';
 
 function Contacts() {
     return (
-        <p>
+        <section>
             Contacts Screen
-        </p>
+        </section>
     )
 }
 

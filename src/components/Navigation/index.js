@@ -10,20 +10,31 @@ function Navigation () {
         { id:'terms', name: 'ÁSZF', screen: 'products' },
         { id:'contact', name: 'Kapcsolat', screen: 'contacts' },
         { id:'game', name: 'Nyereményjáték', screen: 'game' },
+        { id: 'articles', name: 'Cikkek', screen: 'articles'},
         { id:'cart', name: 'Kosár', screen: 'cart' }
-        
     ];
+
+    const getCartTotalCostValue = () => {
+        let totalCostValue = 0;
+        const cartItems = getCartItemsToRender();
+
+        cartItems.forEach(cartItems => {
+            totalCostValue += cartItems.quantity * cartItems.price;
+        });
+
+        return totalCostValue;
+    };
 
     return (
         <header className="main-header">
             <div className="container">
                 <nav className="main-navigation">
                     <ul className="main-navigation-menu">
-                        <img src='img/pc-icon.jpg' className='nav-icon'></img>
+                        <img src='/img/pc-icon.jpg' className='nav-icon'></img>
                     { menuItems.map((menu) =>
                     (
                         <li key={menu.id} className={menu.id === 'cart' ? 'shopping-cart' : ''}>
-                            <Link to={menu.screen}>
+                            <Link to={menu.screen} className={menu.id === 'cart' ? 'dropdown-button' : ''}>
                                 {
                                     menu.id === 'cart' ? 
                                     <>
@@ -43,22 +54,33 @@ function Navigation () {
                                         <li key={item.id}>
                                             <span className='dropdown-cart-item-name'>
                                                 
+                                                {item.name}
 
                                             </span>
 
                                             <span className='dropdown-cart-item-quantity'>
-                                                1 db
+                                                {item.quantity} {item.unit}
                                             </span>
 
                                             <span className='dropdown-cart-item-price'>
-                                                138 648 Ft
+                                                {item.price} {item.currency}
                                             </span>
                                         </li>
                                         )}
+                                        <li className='cart-total-cost'>
+                                            <span className='cart-total-cost-label'>
+                                                Végösszeg:
+                                            </span>
+                                            <span className='cart-total-cost-value'>
+                                               { getCartTotalCostValue() } Ft 
+                                            </span>
+                                        </li>
                                     </ul>
-                                    <button className='button'>
-                                        Tovább a megrendeléshez
-                                    </button>
+                                    <Link to={"/checkout/"}>
+                                        <button className='button'>
+                                            Tovább a megrendeléshez
+                                        </button>
+                                    </Link>
                                 </div>
                                 :
                                 <></>

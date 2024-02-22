@@ -40,6 +40,7 @@ function Home({ addProductToCart , cart, increaseQuantityOfProductInCart, decrea
             increaseQuantity = {increaseQuantityOfProductInCart}
             decreaseQuantity = {decreaseQuantityOfProductInCart}
             />
+            {/*
             <Me myData={mySelf} />
             <header className="App-header">
                 <p>
@@ -61,6 +62,7 @@ function Home({ addProductToCart , cart, increaseQuantityOfProductInCart, decrea
                 Learn React
                 </a>
             </header>
+            */}
         </div>
     )
 
